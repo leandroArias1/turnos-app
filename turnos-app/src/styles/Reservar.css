@@ -1,0 +1,30 @@
+.slot.occupied {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.form {
+  margin-top: 18px;
+  max-width: 360px;
+  display: grid;
+  gap: 10px;
+}
+
+.form label {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.form input, .form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #ff0000;
+  color: white;
+}
+
+.formActions {
+  display: flex;
+  gap: 10px;
+}
