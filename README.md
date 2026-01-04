@@ -4,7 +4,7 @@ App web para gestionar turnos de barbería con intervalos de 30 minutos.
 Incluye vista de cliente para reservar y panel admin para cancelar turnos.
 
 ## Demo
-- Producción: (pegá acá tu link de Vercel)
+- Producción: https://turnos-i5afgyk9r-leandroarias1s-projects.vercel.app/
 
 ## Funcionalidades
 - Generación automática de horarios (09:00 a 18:00, cada 30 min)
