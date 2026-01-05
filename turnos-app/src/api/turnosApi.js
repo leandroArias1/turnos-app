@@ -1,13 +1,10 @@
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:4000";
 
-
 export async function getTurnos() {
   const res = await fetch(`${API_URL}/api/turnos`);
   const data = await res.json().catch(() => null);
 
   if (!res.ok) throw new Error("Error al cargar turnos");
-
-  // si el backend devuelve algo que no es array, devolvemos []
   return Array.isArray(data) ? data : [];
 }
 
@@ -27,7 +24,7 @@ export async function createTurno(payload) {
 }
 
 export async function cancelTurno(id) {
-  const res = await fetch(`${API_URL}/api/turnos/${id}/cancel`, {
+  const res = await fetch(`${API_URL}/api/turnos/${id}/cancelar`, {
     method: "PATCH",
   });
 
