@@ -1,0 +1,80 @@
+.navbarWrap {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  backdrop-filter: blur(12px);
+  background: rgba(7, 10, 15, 0.65);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 14px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand */
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.brandTitle {
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.brandSub {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* Links */
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navLink {
+  padding: 8px 12px;
+  border-radius: 12px;
+
+  font-weight: 700;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+
+  border: 1px solid transparent;
+  transition: all 150ms ease;
+}
+
+.navLink:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+/* Active route */
+.navLink.active {
+  color: white;
+  background: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Primary (Reservar) */
+.navLink.primary {
+  color: #071018;
+  background: linear-gradient(90deg, #6ee7ff, #a78bfa);
+  border: none;
+}
+
+.navLink.primary:hover {
+  filter: brightness(1.05);
+}

@@ -1,22 +1,86 @@
+/* Admin page */
+
+.adminWrap {
+  padding: 16px;
+}
+
+.sectionTitleRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px;
+}
+
 .turnosList {
   list-style: none;
   padding: 0;
-  margin: 12px 0 20px;
+  margin: 12px 0 18px;
   display: grid;
   gap: 10px;
 }
 
 .turnoItem {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
-  padding: 12px;
-  border: 1px solid #333;
-  border-radius: 10px;
+
+  padding: 12px 12px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.turnoInfo {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.turnoMain {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.turnoHour {
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(110, 231, 255, 0.25);
+  background: rgba(110, 231, 255, 0.10);
+  font-weight: 900;
+}
+
+.turnoMeta {
+  color: var(--subtle);
+  font-size: 13px;
+}
+
+.btnDanger {
+  border-color: rgba(255, 93, 108, 0.35);
+  background: rgba(255, 93, 108, 0.10);
+  font-weight: 800;
+}
+
+.btnDanger:hover {
+  background: rgba(255, 93, 108, 0.16);
+  border-color: rgba(255, 93, 108, 0.55);
 }
 
 .turnoItem.cancelled {
   opacity: 0.6;
   text-decoration: line-through;
+}
+
+.cancelTag {
+  color: var(--muted);
+  font-weight: 800;
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.05);
 }

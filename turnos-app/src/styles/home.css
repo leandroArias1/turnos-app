@@ -1,0 +1,38 @@
+.homeHero {
+  padding: 18px;
+}
+
+.heroTitle {
+  font-size: 34px;
+  font-weight: 950;
+  letter-spacing: -0.04em;
+  margin-bottom: 8px;
+}
+
+.heroText {
+  color: var(--muted);
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.heroActions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.heroBtn {
+  border: none;
+  color: #071018;
+  background: linear-gradient(90deg, var(--primary), var(--primary-2));
+  font-weight: 900;
+  padding: 10px 14px;
+  border-radius: 14px;
+}
+
+.heroBtn.secondary {
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+}
