@@ -3,9 +3,9 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 import "./styles/global.css";
 import "./styles/navbar.css";
-import "./styles/reservar.css";
+import "./styles/Reservar.css";
 import "./styles/admin.css";
-import "./styles/home.css"; // opcional
+import "./styles/home.css";
 
 
 
